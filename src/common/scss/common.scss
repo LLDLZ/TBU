@@ -1,5 +1,27 @@
 //全局样式变量的定义
 
 //字体颜色
-$font-color:#333;
-$font-size:16rpx;
+$tbu-font-color:#333;
+//字体大小
+$tbu-font-size:14px;
+//头部背景色
+$tbu-header-bg:#333;
+//内容背景色
+$tbu-content-bg:#ebebec;
+
+//文本内容最小高度
+@mixin tbu-view-text {
+	min-height: 45px;
+	line-height: 45px;
+}
+
+//父类盒子最小高度设置
+$tbu-father-view-min-height:100vh;
+
+//盒子水平垂直居中
+@mixin center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
